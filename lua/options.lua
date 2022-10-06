@@ -28,7 +28,6 @@ end
 
 function setupSplitting()
   vim.opt.splitright = true
-  vim.opt.splitbelow = true
 end
 
 setupFileFinding()

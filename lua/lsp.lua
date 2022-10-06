@@ -27,6 +27,10 @@ function setupLsp()
     cmd = {'haskell-language-server-8.10.7', '--lsp'},
     on_attach = on_attach,
   }
+
+  require('lspconfig')['pyright'].setup{
+    on_attach = on_attach,
+  }
 end
 
 setupLsp()
